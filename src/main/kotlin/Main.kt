@@ -87,15 +87,19 @@ fun main() {
 
     // OOP
 
-    var user = User()
+    var user1 = User(firstName = "Ahmed", lastName = "Ali")
 
-    user.firstName = "Ahmed"
-    user.lastName = "Ali"
+//    user1.printFullName()
 
-    user.printFullName()
+    println(user1.fullName)
+
+    var user2 = User(firstName = "Ahmed")
+
+    println(user2.fullName)
+
+//    user2.printFullName()
 
 }
-
 
 
 
