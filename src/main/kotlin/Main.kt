@@ -87,21 +87,29 @@ fun main() {
 
     // OOP
 
-    var user1 = User(firstName = "Ahmed", lastName = "Ali")
+//    var user1 = User(firstName = "Ahmed", lastName = "Ali")
 
 //    user1.printFullName()
 
-    println(user1.fullName)
-
-    var user2 = User(firstName = "Ahmed")
-
-    println(user2.fullName)
+//    println(user1.fullName)
+//
+//    var user2 = User(firstName = "Ahmed")
+//
+//    println(user2.fullName)
 
 //    user2.printFullName()
 
+
+    println(AccountType.valueOf("GOLD"))
+
 }
 
-
+enum class AccountType {
+    BRONZE,
+    SILVER,
+    GOLD,
+    PLATINUM
+}
 
 
 
