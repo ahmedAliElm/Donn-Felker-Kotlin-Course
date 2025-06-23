@@ -100,15 +100,18 @@ fun main() {
 //    user2.printFullName()
 
 
+
     println(AccountType.valueOf("GOLD"))
+
+    println(AccountType.GOLD.discount)
 
 }
 
-enum class AccountType {
-    BRONZE,
-    SILVER,
-    GOLD,
-    PLATINUM
+enum class AccountType (var discount: Int, var numberOfSubscriptions: Int) {
+    BRONZE(discount = 10, numberOfSubscriptions = 1),
+    SILVER(discount = 20, numberOfSubscriptions = 5),
+    GOLD(discount = 30, numberOfSubscriptions = 10),
+    PLATINUM(discount = 40, numberOfSubscriptions = 20)
 }
 
 
