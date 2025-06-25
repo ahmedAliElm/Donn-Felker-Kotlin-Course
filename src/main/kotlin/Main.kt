@@ -101,9 +101,14 @@ fun main() {
 
 
 
-    println(AccountType.valueOf("GOLD"))
+//    println(AccountType.valueOf("GOLD"))
+//
+//    println(AccountType.GOLD.discount)
 
-    println(AccountType.GOLD.discount)
+
+
+    var p1 = Person()
+    
 
 }
 
@@ -114,7 +119,7 @@ enum class AccountType (var discount: Int, var numberOfSubscriptions: Int) {
     PLATINUM(discount = 40, numberOfSubscriptions = 20)
 }
 
-
+data class Person (val firstName: String = "", val lastName: String = "")
 
 
 
