@@ -107,8 +107,7 @@ fun main() {
 
 
 
-    var p1 = Person()
-
+//    var p1 = Person()
 
 }
 
