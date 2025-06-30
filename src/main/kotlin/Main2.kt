@@ -17,10 +17,24 @@ fun main() {
 //    }
 
 
-    val name = "Ahmed Ali"
+//    val name = "Ahmed Ali"
+//
+//    println(name.initials())
 
-    println(name.initials())
+
+    //------------------------------------------------------
+
+
+    // Lambda Expressions
+
+    val greeter: (String, String) -> Unit = {
+        firstName: String, lastName: String ->
+        println("Hello $firstName $lastName")
+    }
+
+    greeter("Ahmed", "Ali")
 }
+
 
 //fun measure(block: () -> Unit) {
 //
